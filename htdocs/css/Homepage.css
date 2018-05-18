@@ -1,0 +1,11 @@
+body{
+	background-color: Fbfaf8;
+}
+.title{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
