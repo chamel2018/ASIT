@@ -1,0 +1,36 @@
+button.navbar-toggler{
+	border:none;
+}
+nav{
+	text-align: left;
+}
+hr{
+	width:33%;
+	border-color:black;
+	display: inline-block;
+}
+h1{
+	display:inline;
+	font-size: 15pt;
+	margin-top: 10px;
+}
+h2{
+	display:inline;
+	font-size:10pt;
+}
+div.userheading{
+	width:33%;
+	display: inline-block;
+	text-align: center;
+}
+span.usertext{
+	width:66%;
+	text-align:center;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+}
+iframe{
+	border: black;
+	margin: auto;
+}
