@@ -112,8 +112,15 @@
 		<br>
 		<div>
 			<input class="form-control" type="text" placeholder="New short answer question">
-			<input class="btn btn-primary" type="submit" value="Create Question">
+			<button type="button" class="btn btn-primary" onclick = "newQuestion()">Create Question</button>
 		</div>
+		<script type="text/javascript">
+		function newQuestion(){
+		<?php 
+			mysql_query("INSERT INTO QUESTION(question_id, category_id, input_type_id, statement) VALUES((SELECT 1+MAX(question_id) FROM QUESTION), 1, 1, *****GET INPUT FROM TEXT BOX AND PUT HERE****)")
+		?>
+		}
+		</script>
 	</div>
 </body>
 </html>
