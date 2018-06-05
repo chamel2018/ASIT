@@ -31,7 +31,6 @@ span.usertext{
 	position:relative;
 	top:10px;
 }
-
 h1.StudentHeader{
 	display: flex;
 	width:179px;
@@ -55,6 +54,10 @@ div.graph1info{
 input.form-control{
 	width:79%;
 	display: inline;
+	text-align: center;
+}
+input.form-control:focus{
+	text-align: left;
 }
 input.btn-primary{
 	width: 19%;	
