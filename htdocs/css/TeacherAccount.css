@@ -31,31 +31,8 @@ span.usertext{
 	position:relative;
 	top:10px;
 }
-
-h1.StudentHeader{
-	display: flex;
-	width:179px;
-	text-align: center;
-	margin:auto;
+h1.PageTitle{
+	text-align:center;
+	font-size: 30pt;
 	margin-top:30px;
-	font-size:30pt;
-}
-p.graphinfo{
-	display:inline-block;
-}
-canvas.piechart{
-
-	float: left;
-}
-div.graph1info{
-	margin-left:300px;
-	height: 300px;
-	border: 3px solid black;
-}
-input.form-control{
-	width:79%;
-	display: inline;
-}
-input.btn-primary{
-	width: 19%;	
 }

@@ -31,3 +31,20 @@ span.usertext{
 	position:relative;
 	top:10px;
 }
+table{
+	margin:auto;
+	margin-top:50px;
+}
+td, th{
+	border:2px black solid;
+	padding-left:100px;
+	padding-right:100px;
+}
+h1.StudentHeader{
+	display: flex;
+	width:158px;
+	text-align: center;
+	margin:auto;
+	margin-top:30px;
+	font-size:30pt;
+}
