@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Strategies</title>
-	<link rel="stylesheet" type="text/css" href="css/TeacherAccount.css">
+	<title>Edit Account</title>
+	<link rel="stylesheet" type="text/css" href="css/TeacherEditAccount.css">
 
 	    <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -53,20 +53,35 @@
 	<hr class = "head">
 	<!-- ^This is on all pages-->
 	<h1 class = "PageTitle"> Account </h1>
-	<div class = "AccountInfo">
-		<p class = "attribute">Name</p>
-		<p class = "value">TEACHERNAME</p>
-		<p class = "attribute">Status</p>
-		<p class="value">Teacher</p>
-		<p class="attribute">Email</p>
-		<p class="value">TEACHEREMAIL</p>
-		<p class="attribute">Subject</p>
-		<p class="value">TEACHERSUBJECT</p>
-		<p class="attribute">Students</p>
-		<p class="value"><a href="TeacherStudents.html">Student Page</a></p>
-		<p class="attribute">Username</p>
-		<p class="value">TEACHERUSERNAME</p>
-	</div>
-	<a href = "TeacherEditAccount.html"><button type="button" class="edit btn btn-outline-secondary">Edit My Account</button></a>
+	<form class = "editor" method = "post" action = "php/EditAccount.php">
+		<div class = "AccountInfo">
+			<p class = "attribute">First Name</p>
+			<p class = "value">
+				<input type="Text" name="TeacherFName" value="Your First Name">
+			</p>
+			<p class = "attribute">Last Name</p>
+			<p class = "value">
+				<input type="Text" name="TeacherLName" value="Your Last Name">
+			</p>
+
+			<p class = "attribute">Status</p>
+			<p class="value">Teacher</p>
+			<p class="attribute">Email</p>
+			<p class = "value">
+				<input type="Text" name="TeacherEmail" value="Your Email">
+			</p>
+			<p class="attribute">Subject</p>
+			<p class = "value">
+				<input type="Text" name="TeacherSubject" value="Your Subject">
+			</p>			
+			<p class="attribute">Students</p>
+			<p class="value"><a href="TeacherStudents.html">Student Page</a></p>
+			<p class="attribute">Username</p>
+			<p class = "value">
+				<input type="Text" name="TeacherUserName" value="Your Username">
+			</p>
+		</div>
+		<input class="update btn btn-primary" type="submit" name = "submit" value="Update">
+	</form>
 </body>
 </html>
