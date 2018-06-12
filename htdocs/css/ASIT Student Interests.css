@@ -30,7 +30,11 @@ span.usertext{
 	position: relative;
 	top: 10px;
 }
-iframe{
-	border: black;
-	margin: auto;
+
+div.optiontwo{
+	margin-top: 10px;
+}
+
+div.submit_button{
+	margin-top: 10px;
 }

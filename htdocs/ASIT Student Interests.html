@@ -4,12 +4,12 @@
 	<title>ASIT Student Interests</title>
 </head>
 <!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="css/ASIT Student Interests.css">
+<link rel="stylesheet" type="text/css" href="css/ASIT Student Interests.css">
 
 </head>
 <body>
@@ -36,7 +36,7 @@
 					<a class="nav-link" href="ASIT Student Vision.html">Vision</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Details</a>
+					<a class="nav-link" href="ASIT Student Details.html">Details</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="ASIT Student Interests.html">Interests</a>
@@ -77,11 +77,159 @@
 				<td> <?php echo $row['statement']?> </td>
 			</tr>
 			<?php
-			}
-			?>
-		</tbody>
-	</table>
-	<!-- ^this will not work until we have a database and xampp installed-->
+		}
+		?>
+	</tbody>
+</table>
+<!-- ^this will not work until we have a database and xampp installed-->
+
+<!-- Career Choice -->
+<div class="optionone">
+	<div tabindex="0" class="selecter closed">
+		<select name="Major" tabindex="-1" class="required major major-one major-primary selecter-element">
+			<option value="default">Primary Career Interest</option>
+			<option>Actor/actress</option>
+			<option>Agriculture</option>
+			<option>Anchorman</option>
+			<option>Architecture</option>
+			<option>Area Studies</option>
+			<option>Bureaucracy</option>
+			<option>Business</option>
+			<option>Congressional aides/chief of staff/speechwriters/etc</option>
+			<option>Criminal Justice</option>
+			<option>Dentistry</option>
+			<option>Director</option>
+			<option>Education</option>
+			<option>Elected office</option>
+			<option>Engineering</option>
+			<option>Entertainment Industry/Arts</option>
+			<option>Farming, Fishing, and Forestry</option>
+			<option>Fashion Industry</option>
+			<option>Fashion businessperson</option>
+			<option>Fashion designer</option>
+			<option>Film Industry</option>
+			<option>Foreign Studies</option>
+			<option>Higher command</option>
+			<option>Infantry</option>
+			<option>International Business</option>
+			<option>International Relations</option>
+			<option>International Studies</option>
+			<option>Journalism</option>
+			<option>Judge</option>
+			<option>Languages</option>
+			<option>Law</option>
+			<option>Law Enforcement</option>
+			<option>Lawyer</option>
+			<option>Mathematics</option>
+			<option>Med School</option>
+			<option>Medical</option>
+			<option>Military</option>
+			<option>Military technology</option>
+			<option>Model</option>
+			<option>Music producer</option>
+			<option>Newspaper/Magazine Writer/Editor</option>
+			<option>Nursing</option>
+			<option>Other</option>
+			<option>PA</option>
+			<option>Photography</option>
+			<option>Physical Therapy</option>
+			<option>Police Officer</option>
+			<option>Politics</option>
+			<option>Producer</option>
+			<option>Professional Athlete</option>
+			<option>Professional Sports</option>
+			<option>Psychiatry</option>
+			<option>Psychology</option>
+			<option>Religion/Spiritual Studies</option>
+			<option>Reporting</option>
+			<option>STEM</option>
+			<option>Science</option>
+			<option>Screenwriter</option>
+			<option>Singer/musician</option>
+			<option>Social Sciences</option>
+			<option>Social Worker</option>
+			<option>Sports Management</option>
+			<option>Technology</option>
+			<option>Visual Artist (painting, drawing, sculpting, illustration, etc.)</option>
+		</select>
+	</div>
+</div>
+
+
+<div class="optiontwo">
+	<div tabindex="0" class="selecter closed">
+		<select name="Major" tabindex="-1" class="required major major-one major-primary selecter-element">
+			<option value="default">Secondary Career Interest</option>
+			<option>Actor/actress</option>
+			<option>Agriculture</option>
+			<option>Anchorman</option>
+			<option>Architecture</option>
+			<option>Area Studies</option>
+			<option>Bureaucracy</option>
+			<option>Business</option>
+			<option>Congressional aides/chief of staff/speechwriters/etc</option>
+			<option>Criminal Justice</option>
+			<option>Dentistry</option>
+			<option>Director</option>
+			<option>Education</option>
+			<option>Elected office</option>
+			<option>Engineering</option>
+			<option>Entertainment Industry/Arts</option>
+			<option>Farming, Fishing, and Forestry</option>
+			<option>Fashion Industry</option>
+			<option>Fashion businessperson</option>
+			<option>Fashion designer</option>
+			<option>Film Industry</option>
+			<option>Foreign Studies</option>
+			<option>Higher command</option>
+			<option>Infantry</option>
+			<option>International Business</option>
+			<option>International Relations</option>
+			<option>International Studies</option>
+			<option>Journalism</option>
+			<option>Judge</option>
+			<option>Languages</option>
+			<option>Law</option>
+			<option>Law Enforcement</option>
+			<option>Lawyer</option>
+			<option>Mathematics</option>
+			<option>Med School</option>
+			<option>Medical</option>
+			<option>Military</option>
+			<option>Military technology</option>
+			<option>Model</option>
+			<option>Music producer</option>
+			<option>Newspaper/Magazine Writer/Editor</option>
+			<option>Nursing</option>
+			<option>Other</option>
+			<option>PA</option>
+			<option>Photography</option>
+			<option>Physical Therapy</option>
+			<option>Police Officer</option>
+			<option>Politics</option>
+			<option>Producer</option>
+			<option>Professional Athlete</option>
+			<option>Professional Sports</option>
+			<option>Psychiatry</option>
+			<option>Psychology</option>
+			<option>Religion/Spiritual Studies</option>
+			<option>Reporting</option>
+			<option>STEM</option>
+			<option>Science</option>
+			<option>Screenwriter</option>
+			<option>Singer/musician</option>
+			<option>Social Sciences</option>
+			<option>Social Worker</option>
+			<option>Sports Management</option>
+			<option>Technology</option>
+			<option>Visual Artist (painting, drawing, sculpting, illustration, etc.)</option>
+		</select>
+	</div>
+</div>
+
+<div class="submit_button">
+	<button type="submit" class="btn btn-primary">Submit</button>
+</div>
 
 </body>
 </html>

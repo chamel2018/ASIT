@@ -35,15 +35,14 @@ iframe{
 	margin: auto;
 }
 
-textarea.vision{
+textarea.strengths{
 	display: block;
     margin: auto;
     margin-top: 20px;
 }
 
-div.submit_button{
+textarea.weaknesses{
 	display: block;
-	margin: auto;
-	width: 100px;
-	margin-top: 10px;
+    margin: auto;
+    margin-top: 20px;
 }
