@@ -56,7 +56,6 @@ input.form-control{
 	width:80%;
 	display: inline;
 }
-button.btn-primary{
+input.btn-primary{
 	width: 19%;	
-	color:yellow;
 }
