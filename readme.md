@@ -21,7 +21,7 @@ If you need to contact anyone with any questions, here are our names:
 
 Jack Denson jdenson2019@student.amsacs.org - made all of the teacher pages and all of their queries/php pages
 
-Ryan Hennessey rhennessey2019@student.amsacs.org - helped set up github, the login page, and the database
+Ryan Hennessey rhennessey2019@student.amsacs.org - set up github, the login page, and the database
 
 Mahish Mahendarkar mmaahendarkar2019@student.amsacs.org - made all of the parent pages
 
