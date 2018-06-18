@@ -73,7 +73,7 @@
 			$query = mysql_query("SELECT DISTINCT * FROM ANSWER a JOIN Q_A_LINKER qal ON(qal.answer_id =a.answer_id) JOIN QUESTION q ON(q.question_id = qal.question_id) WHERE question_id = 1");
 			while($row = mysql_fetch_assoc($query)){
 			?>
-				percentages[pnum] = <?php echo $row[mysql_query("SELECT COUNT(*) FROM ANSWER a JOIN Q_A_LINKER qal ON(qal.answer_id =a.answer_id) JOIN QUESTION q ON(q.question_id = qal.question_id) WHERE (question_id = 1 AND a.response = $row.response)")]*100?> /totalresponses ;
+				percentages[pnum] = <?php echo $row[mysql_query("SELECT COUNT(*) FROM ANSWER a JOIN QUESTION q ON(q.question_id = a.question_id) WHERE (q.question_id = 1 AND a.response = ".$row.response.")")]*100?> /totalresponses ;
 				pnum++;
 			<?php
 			}

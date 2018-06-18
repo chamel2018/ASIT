@@ -6,4 +6,4 @@
 	<script type="text/javascript">
 		window.location = "../TeacherStrategies.html";
 	</script> 
-	?>
+?>
