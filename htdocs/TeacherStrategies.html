@@ -73,7 +73,7 @@
 			$query = mysql_query("SELECT DISTINCT * FROM ANSWER a JOIN Q_A_LINKER qal ON(qal.answer_id =a.answer_id) JOIN QUESTION q ON(q.question_id = qal.question_id) WHERE question_id = 1");
 			while($row = mysql_fetch_assoc($query)){
 			?>
-				percentages[pnum] = <?php echo $row[mysql_query("SELECT COUNT(*) FROM ANSWER a JOIN Q_A_LINKER qal ON(qal.answer_id =a.answer_id) JOIN QUESTION q ON(q.question_id = qal.question_id) WHERE (question_id = 1 AND a.response = $row.response)")]*100?> /totalresponses ;
+				percentages[pnum] = <?php echo $row[mysql_query("SELECT COUNT(*) FROM ANSWER a JOIN QUESTION q ON(q.question_id = a.question_id) WHERE (q.question_id = 1 AND a.response = ".$row.response.")")]*100?> /totalresponses ;
 				pnum++;
 			<?php
 			}
@@ -112,16 +112,10 @@
 		<br>
 
 
-		<form method = "post" action = "">
+		<form method = "post" action = "php/NewQuestion.php">
 			<input class="form-control" type="text" name = "newQuestionName" id = "newQuestionName" placeholder="New short answer question">
 			<input class="btn btn-primary" type="submit" name = "submit" value="Create Question" >
 		</form>
 	</div>
 </body>
 </html>		
-<?php 
-	if(isset($_POST['submit'])){
-		$newQuestion = $_POST['newQuestionName']
-		mysql_query("INSERT INTO QUESTION(question_id, category_id, input_type_id, statement) VALUES((SELECT 1+MAX(question_id) FROM QUESTION), 1, 1, ".$newQuestion.")")
-	}
-?>
