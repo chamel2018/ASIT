@@ -1,4 +1,5 @@
 A Message to the future of ASIT
+
 Hello! Congratulations on nearly completing a year of data sciences, this is a message from the 2017-2018 Oracle class, who worked on ASIT our 4th term. We coded all of the html, css, and php files, and worked on inserting a database. We coded in Sublime, using bootstrap, and used a free 14 day trial of Navicat for the database. 
 
 We found a few problems with the ERD given to us by previous years(On the last page of the "Information About the Project" file), and we made the following changes:
