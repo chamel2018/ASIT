@@ -18,8 +18,13 @@ We looked into using cookies from the login page to be able to tell what user is
 
 
 If you need to contact anyone with any questions, here are our names:
+
 Jack Denson jdenson2019@student.amsacs.org - made all of the teacher pages and all of their queries/php pages
+
 Ryan Hennessey rhennessey2019@student.amsacs.org - helped set up github, the login page, and the database
+
 Mahish Mahendarkar mmaahendarkar2019@student.amsacs.org - made all of the parent pages
+
 Aditya Khanna akhanna2019@student.amsacs.org - made all of the student pages
+
 Daniel Yu dyu2019@student.amsacs.org - made all of the admin pages
