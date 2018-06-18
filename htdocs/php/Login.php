@@ -5,12 +5,15 @@ Username: <?php
 $uname = $_REQUEST["Username"];
 echo 'bleh';
 echo $uname;
+phpinfo();
 ?><br>
 
-Password hash: <?php if (($_REQUEST["Password"]=='')) {
+Password hash: <?php
+	dl ('C:\Users\rhennessey2019\Desktop\xampp\php\ext\php_pdo_mysql.dll');
+ if (($_REQUEST["Password"]=='')) {
 	echo 'Password cannot be blank';
 }else{
-		$mysqli = new mysqli("localhost", "root", "", "test");
+		$mysqli = new PDO('mysql:host=localhost;dbname=test', 'root', '');
 	$pwhash = hash('sha256', $_REQUEST["Password"]);
 	echo $pwhash;
 	if($mysqli->query("SELECT passwordhash FROM PERSON WHERE username = ".$uname) == $pwhash){
