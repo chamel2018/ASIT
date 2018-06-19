@@ -46,3 +46,10 @@ textarea.weaknesses{
     margin: auto;
     margin-top: 20px;
 }
+
+div.submit_button{
+	display: block;
+	margin: auto;
+	width: 100px;
+	margin-top: 10px;
+}
