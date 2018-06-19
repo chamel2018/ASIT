@@ -70,6 +70,14 @@
 			?>;
 			var pnum = 0;
 			<?php 
+			$servername = "localhost:8080";
+			$username = "root";
+			$password = "";
+			$conn = new mysqli($servername, $username, $password);
+			if (!$conn) {
+	  			echo "Connection Failed"
+			}
+			^this connects to the database
 			$query = mysql_query("SELECT DISTINCT * FROM ANSWER a JOIN Q_A_LINKER qal ON(qal.answer_id =a.answer_id) JOIN QUESTION q ON(q.question_id = qal.question_id) WHERE question_id = 1");
 			while($row = mysql_fetch_assoc($query)){
 			?>
@@ -91,12 +99,12 @@
 		</script>
 		<div class = "graph1info">
 			<p><?php
-				$servername = "localhost";
-				$username = "username";
-				$password = "password";
+				$servername = "localhost:8080";
+				$username = "root";
+				$password = "";
 				$conn = new mysqli($servername, $username, $password);
 				if (!$conn) {
-  				  echo "Connection Failed"
+		  			echo "Connection Failed"
 				} 
 				echo mysql_query("SELECT STATEMENT FROM QUESTION WHERE question_id = 1")?>
 			</p>
