@@ -52,36 +52,62 @@
 	</div>
 	<hr class = "head">
 	<!-- ^This is on all pages-->
+	<?php
+		$servername = "localhost:8080";
+		$username = "root";
+		$password = "";
+		$conn = new mysqli($servername, $username, $password);
+		if (!$conn) {
+  			echo "Connection Failed";
+		}
+		<!--^this connects to the database-->
+		$teacherId = 2;
+		<!--^This must be changed once we have the capability to tell what user is using the account, change it to the person_id of the teacher that is logged in-->
+	?>
+
+	
 	<h1 class = "PageTitle"> Account </h1>
 	<form class = "editor" method = "post" action = "php/EditAccount.php">
 		<div class = "AccountInfo">
 			<p class = "attribute">First Name</p>
 			<p class = "value">
-				<input type="Text" name="TeacherFName" value="Your First Name">
+				<input type="Text" name="TeacherFName" id = "fninput" value="" >
 			</p>
 			<p class = "attribute">Last Name</p>
 			<p class = "value">
-				<input type="Text" name="TeacherLName" value="Your Last Name">
+				<input type="Text" name="TeacherLName" id = "lninput" value="" >
 			</p>
 
 			<p class = "attribute">Status</p>
 			<p class="value">Teacher</p>
 			<p class="attribute">Email</p>
 			<p class = "value">
-				<input type="Text" name="TeacherEmail" value="Your Email">
+				<input type="Text" name="TeacherEmail" id = "emailinput" value= "" >
 			</p>
 			<p class="attribute">Subject</p>
 			<p class = "value">
-				<input type="Text" name="TeacherSubject" value="Your Subject">
+				<input type="Text" name="TeacherSubject" id="subjectinput" value= "" >
 			</p>			
 			<p class="attribute">Students</p>
 			<p class="value"><a href="TeacherStudents.html">Student Page</a></p>
 			<p class="attribute">Username</p>
 			<p class = "value">
-				<input type="Text" name="TeacherUserName" value="Your Username">
+				<input type="Text" name="TeacherUserName" id = "un_input" value= "" >
 			</p>
 		</div>
 		<input class="update btn btn-primary" type="submit" name = "submit" value="Update">
 	</form>
+	<script type="text/javascript">
+		var fname = <?php echo mysql_query("SELECT f_name FROM PERSON WHERE person_id = ".$teacherId)?>;
+		var lname = <?php echo mysql_query("SELECT l_name FROM PERSON WHERE person_id = ".$teacherId)?>;
+		var email = <?php echo mysql_query("SELECT email FROM PERSON WHERE person_id = ".$teacherId)?>;
+		var subject = <?php echo mysql_query("SELECT subject FROM PERSON WHERE person_id = ".$teacherId)?>;
+		var username = <?php echo mysql_query("SELECT username FROM PERSON WHERE person_id = ".$teacherId)?>;
+		document.getElementById("fninput").value = fname;
+		document.getElementById("lninput").value = lname;
+		document.getElementById("emailinput").value = email;
+		document.getElementById("subjectinput").value = subject;
+		document.getElementById("un_input").value = username;
+	</script>
 </body>
 </html>
