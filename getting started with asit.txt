@@ -1,0 +1,21 @@
+Hello,
+
+This is a guide on how to set up your computer to work on the ASIT project
+
+step 1. download xampp(portable version) if it is not installed already. you may need to fidget with it for a while
+step 2. set up php.ini, you need the database extensions as well as anything you might think it needs
+step 3. set up httpd.conf in the apache folder, theoretically not much to do here
+step 4. try to start apache, if it doesn't start change the port to 8080 and try again. if it still doesn't work open the batch file named apache and read the errors that it makes
+step 5. install github desktop and make a github account. this will make your life a lot easier.
+step 6. fork the ASIT github, and use github desktop to put it on your computer.
+step 6.5 whoever is the github manager EMAIL ME (rhennessey2019@student.amsacs.org) and I will give you ownership of the AMSA-ASIT github page so you can control it
+step 7. pull all necessary files onto your computer
+
+WHEN READY TO WORK ON THE DATABSE (not before)
+step 8. download navicat trial. it is an amazing database tool that does a bunch of cool stuff, and I used to to construct the database super quickly
+step 9. use navicat and import the database.sql file in your github repository, that has all of the tables and stuff on it
+
+
+that should be it and I wish you all luck!
+
+Ryan Hennessey
